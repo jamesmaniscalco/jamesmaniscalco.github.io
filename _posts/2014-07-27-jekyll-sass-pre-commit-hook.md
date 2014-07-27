@@ -71,7 +71,7 @@ $ chmod +x .git/hooks/pre-commit
 {% endhighlight %}
 
 
-Note: if you are using a Github client application to handle your commits, you will likely need to specify where the `jekyll` executable is. Since I use `rbenv`, I needed to add the following to the script (above the call to `jekyll`):
+Note: if you are using a Github client application to handle your commits, you will likely need to specify where the Jekyll executable is. Since I use `rbenv`, I needed to add the following to the script (above the call to `jekyll`):
 
 
 {% highlight bash linenos %}
@@ -81,4 +81,4 @@ PATH=/usr/local/var/rbenv/shims:$PATH
 {% endhighlight %}
 
 
-Now, when we try to commit, git will build the site, copy the CSS to the Github-appropriate directory, and add the file to the repository before executing the commit. In addition, if the build fails with any errors, the commit won't go through.
+Voila! Now, when we try to commit, git will build the site, copy the CSS to the Github-appropriate directory, and add the file to the repository before executing the commit. In addition, if the build fails with any errors, the commit won't go through.
