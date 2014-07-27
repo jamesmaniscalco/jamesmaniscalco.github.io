@@ -1,7 +1,12 @@
-.highlight, p > pre, p > code
+.highlight, p > pre, p > code, li > code
   background: $code-background
   border-radius: 0.4em
-  box-shadow: inset 0 0 0.2em #666
+  box-shadow: inset 0 0 0.3em #777
+
+.highlight
+  overflow: auto
+  margin: 1em 0
+  padding: 0.5em 0 0.5em
   .c
     color: #999988
     font-style: italic
@@ -104,9 +109,14 @@
     color: #999988
     border-right: 1px solid #999988
     padding-right: 0.5em
-pre
-  padding: 1em 0.5em
-.highlight
-  overflow: auto
-  margin: 1em 0
-  padding: 0.5em 0 0.5em
+
+code, pre
+  white-space: pre
+  padding: 0.1em 0.4em
+  display: inline-block
+  margin: 0
+  font: 1em $monospace
+  font-weight: 500
+
+p > code, li > code
+  padding: 0.2em 0.4em 0

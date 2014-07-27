@@ -8,10 +8,7 @@ layout: default
             {{ page.title }}
         </h1>
         <p class="date">
-            {{ page.date | date: "%B %d, %Y" }}
-        </p>
-        <p class="tags">
-            {{ page.categories | category_links }}
+            {{ page.date | date: "%B %d, %Y" }} - {{ page.categories | category_links }}
         </p>
     </header>
 

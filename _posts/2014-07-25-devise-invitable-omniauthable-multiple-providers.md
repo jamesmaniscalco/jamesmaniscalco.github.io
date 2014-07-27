@@ -316,7 +316,7 @@ def self.from_omniauth(auth, current_user)
     end
 
     # this part is new:
-    if user.invitation_token?   # if the user was invited, set the invitation token to nil so they're activated`
+    if user.invitation_token?   # if the user was invited, set the invitation token to nil so they're activated
       user.update(invitation_token: nil)
     end
 
