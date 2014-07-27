@@ -10,7 +10,5 @@ layout: default
 {% for post in site.posts %}
 [{{ post.title }}]({{ post.url }})
 
-  {% for cat in post.categories %}
-   [{{ cat }}]({{ cat.url }})
-  {% endfor %}
+{{ post.categories | category_links }}
 {% endfor %}

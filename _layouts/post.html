@@ -10,11 +10,9 @@ layout: default
         <p class="date">
             {{ page.date | date: "%B %d, %Y" }}
         </p>
-        <ul class="tags">
-            {% for cat in page.categories %}
-                [{{ cat }}]({{ cat.url }})
-            {% endfor %}
-        </ul>
+        <p class="tags">
+            {{ page.categories | category_links }}
+        </p>
     </header>
 
     <section>

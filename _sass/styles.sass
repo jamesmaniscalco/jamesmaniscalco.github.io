@@ -7,6 +7,12 @@ body
 content
   @include span-columns(12)
 
+p, li
+  line-height: 1.5em
+
+
+// blog posts
+
 article
   @include span-columns(8)
   @include shift(1)
@@ -17,9 +23,9 @@ article
       font-size: 2em
     .date
       color: $subtitle-color
-
-p, li
-  line-height: 1.5em
+      @include span-columns(2 of 8)
+    .tags
+      @include span-columns(6 of 8)
 
 
 // code highlighting
