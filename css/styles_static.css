@@ -137,16 +137,60 @@ body {
     display: table;
     clear: both; }
 
-content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  content:last-child {
-    margin-right: 0; }
-
 p, li {
   line-height: 1.5em; }
+
+@media screen and (min-width: 0) {
+  content {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%; }
+    content:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 760px) {
+  content {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 100%; }
+    content:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 1050px) {
+  content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    content:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 0) {
+  article {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%; }
+    article:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 760px) {
+  article {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 74.10533%;
+    margin-left: 12.94733%; }
+    article:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 1050px) {
+  article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 8.5298%; }
+    article:last-child {
+      margin-right: 0; } }
 
 a {
   text-decoration: none;
@@ -158,23 +202,9 @@ a {
     color: #25c943; }
 
 article {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 8.5298%;
   padding: 1em; }
-  article:last-child {
-    margin-right: 0; }
   article header .title {
     color: black;
     font-size: 2em; }
-  article header .date {
-    color: #828282; }
   article header .tags {
-    float: left;
-    display: block;
-    margin-right: 3.57866%;
-    width: 74.10533%; }
-    article header .tags:last-child {
-      margin-right: 0; }
+    color: #828282; }

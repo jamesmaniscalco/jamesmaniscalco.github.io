@@ -53,8 +53,8 @@ if [ $? -ne 0 ]; then
 fi
 
 DIR=$(git rev-parse --show-toplevel)
-cp $DIR/_site/css/styles.css $DIR/css/styles.css
-git add $DIR/css/styles.css
+cp $DIR/_site/css/styles.css $DIR/css/styles_static.css
+git add $DIR/css/styles_static.css
 
 exit 0
 
@@ -82,3 +82,16 @@ PATH=/usr/local/var/rbenv/shims:$PATH
 
 
 Voila! Now, when we try to commit, git will build the site, copy the CSS to the Github-appropriate directory, and add the file to the repository before executing the commit. In addition, if the build fails with any errors, the commit won't go through.
+
+The final bit is to fix the `<head>` section of our master template to link to the new `styles_static.css`:
+
+
+{% highlight html linenos %}
+
+<link rel="stylesheet" media="screen" href="/css/styles_static.css" type="text/css">
+<link rel="stylesheet" media="screen" href="/css/styles.css" type="text/css">
+
+{% endhighlight %}
+
+
+Make sure to put `styles_static.css` before the main stylesheet; this means that any potentially outdated styles in the static file (while developing locally, since that file won't be updated outside of the commit hook) will be overridden by the up-to-date `styles.css`.

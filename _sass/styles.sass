@@ -4,11 +4,37 @@ body
   font: 100% $font-stack
   @include outer-container
 
-content
-  @include span-columns(12)
-
 p, li
   line-height: 1.5em
+
+
+// sizing
+
+$mobile: new-breakpoint(min-width 0 4)
+$tablet: new-breakpoint(min-width 760px 8)
+$desktop: new-breakpoint(min-width 1050px 12)
+
+content
+  @include media($mobile)
+    @include span-columns(4)
+  @include media($tablet)
+    @include span-columns(8)
+  @include media($desktop)
+    @include span-columns(12)
+
+article
+  @include media($mobile)
+    @include span-columns(4)
+
+  @include media($tablet)
+    @include span-columns(6)
+    @include shift(1)
+
+  @include media($desktop)
+    @include span-columns(8)
+    @include shift(1)
+
+
 
 
 // typography
@@ -24,16 +50,15 @@ a
 // blog posts
 
 article
-  @include span-columns(8)
-  @include shift(1)
   padding: 1em
   header
     .title
       color: $title-color
       font-size: 2em
-    .date
-      color: $subtitle-color
     .tags
-      @include span-columns(6 of 8)
+      color: $subtitle-color
+
+
+
 
 
