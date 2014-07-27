@@ -1,0 +1,38 @@
+// general
+
+body
+  font: 100% $font-stack
+  @include outer-container
+
+content
+  @include span-columns(12)
+
+article
+  @include span-columns(8)
+  @include shift(1)
+  padding: 1em
+  header
+    .title
+      color: $title-color
+      font-size: 2em
+    .date
+      color: $subtitle-color
+
+p, li
+  line-height: 1.5em
+
+
+// code highlighting
+
+code, pre
+  white-space: pre
+  padding: 0.1em 0.4em
+  display: inline-block
+  margin: 0
+  font: 1em $monospace
+  font-weight: 500
+
+p > code
+  padding: 0.2em 0.3em 0
+
+
