@@ -58,15 +58,25 @@ git add $DIR/css/styles.css
 
 exit 0
 
-{% endhighlight }
+{% endhighlight %}
 
 
-And make sure to set the file as executable with
+Make sure to set the file as executable with:
 
 
 {% highlight bash %}
 
 $ chmod +x .git/hooks/pre-commit
+
+{% endhighlight %}
+
+
+Note: if you are using a Github client application to handle your commits, you will likely need to specify where the `jekyll` executable is. Since I use `rbenv`, I needed to add the following to the script (above the call to `jekyll`):
+
+
+{% highlight bash linenos %}
+
+PATH=/usr/local/var/rbenv/shims:$PATH
 
 {% endhighlight %}
 
