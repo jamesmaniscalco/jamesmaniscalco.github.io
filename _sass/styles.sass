@@ -19,6 +19,7 @@ content
   @include outer-container
 
 article.blog-post, .page
+  padding: 1em
   @include media($mobile)
     @include span-columns(4)
   @include media($tablet)
@@ -45,7 +46,7 @@ section.frontpage-main-header
     padding: 4em 1em
     & > dl
       @include span-columns(9 of 12)
-      @include shift(1)
+      @include shift(2)
 
 section.frontpage
   @include media($mobile)
@@ -59,29 +60,58 @@ section.frontpage
       padding-top: 2em
   @include media($desktop)
     @include span-columns(10)
-    @include shift(1)
+    @include shift(2)
     &.first
       padding-top: 4em
+
+section.site-header
+  @include media($mobile)
+    @include span-columns(4)
+    & > header
+      @include span-columns(5 of 8)
+    & > aside
+      @include span-columns(3 of 8)
+  @include media($tablet)
+    @include span-columns(8)
+    & > header
+      @include span-columns(5 of 8)
+      @include shift(1)  
+    & > aside
+      @include span-columns(1 of 8)
+  @include media($desktop)
+    @include span-columns(12)
+    & > header
+      @include span-columns(6 of 12)
+      @include shift(2)
+    & > aside
+      @include span-columns(1 of 12)
+  aside
+    @include omega
 
 
 
 // blog posts
 article.blog-post, .page
-  padding: 1em
   header
     .title
-      color: $title-color
       font-size: 2em
-    .tags
-      color: $subtitle-color
+
+p.tags
+  color: $subtitle-color
+
+section.site-header
+  background-color: $header-background
+  header
+    padding: 1em
+  aside
+    padding: 1em
 
 
 // main page
 section.frontpage-main-header
-  background-color: $secondary-color
-  text-align: left
+  background-color: $header-background
   margin: 0
-  color: $off-whiter
+  color: $header-text-color
   // text-shadow: 0 0 0.2em #333
   // box-shadow: 0 0 0.5em #000
   dl
@@ -97,7 +127,7 @@ section.frontpage-main-header
 section.frontpage
   padding: 0 1em
 
-div.wrapper
+div.frontpage-wrapper
   @include fill-parent
   box-shadow: 0 0 2em #000
 
@@ -125,6 +155,15 @@ section.frontpage-main-header, .frontpage
       dt
         font-size: 300%
 
+section.site-header
+  color: $header-text-color
+  a
+    color: $header-text-color
+  h4
+    margin: 0
+  aside
+    text-align: right
+
 section.frontpage
   h1
     margin: 0.2em 0
@@ -134,7 +173,7 @@ h1
   font-size: 2em
 
 h2, h3, h4, h5, h6
-  font-weight: 700
+  font-weight: 300
 
 h2
   font-size: 1.6em

@@ -7,8 +7,14 @@ layout: default
         <h1 class="title">
             {{ page.title }}
         </h1>
-        <p class="tags">
-            {{ page.date | date: "%B %d, %Y" }} - {{ page.categories | category_links }}
+        <p class="tags">{{ page.date | date: "%B %d, %Y" }} - 
+            {% for cat in page.categories %}
+              {% if forloop.last %}
+                {{ cat }}
+              {% else %}
+                {{ cat }}, 
+              {% endif %}
+            {% endfor %}
         </p>
     </header>
 
