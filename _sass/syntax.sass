@@ -4,10 +4,11 @@
   box-shadow: inset 0 0 $code-shadow-size $code-shadow-color
   color: $code-color
 
+
 .highlight
-  overflow: auto
   margin: 1em 0
   padding: 0.5em 0 0.5em
+  overflow: auto
   .c
     color: #999988
     font-style: italic
@@ -112,7 +113,6 @@
     padding-right: 0.5em
 
 code, pre
-  white-space: pre
   padding: 0.1em 0.4em
   display: inline-block
   margin: 0
@@ -121,3 +121,5 @@ code, pre
 
 p > code, li > code
   padding: 0.2em 0.4em 0
+  display: inline
+  word-wrap: break-word

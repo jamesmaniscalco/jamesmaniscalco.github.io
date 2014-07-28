@@ -1,55 +1,72 @@
 // general
 
 body
-  font: 100% $font-stack
-  @include outer-container
+  -webkit-text-size-adjust: 100%
+  margin: 0
+  background-color: $background
 
 p, li
   line-height: 1.5em
 
 
-// sizing
 
+// sizing
 $mobile: new-breakpoint(min-width 0 4)
 $tablet: new-breakpoint(min-width 760px 8)
 $desktop: new-breakpoint(min-width 1050px 12)
 
 content
+  @include outer-container
+
+article.blog-post, .page
   @include media($mobile)
     @include span-columns(4)
-  @include media($tablet)
-    @include span-columns(8)
-  @include media($desktop)
-    @include span-columns(12)
-
-article
-  @include media($mobile)
-    @include span-columns(4)
-
   @include media($tablet)
     @include span-columns(6)
     @include shift(1)
-
   @include media($desktop)
+    @include span-columns(7)
+    @include shift(2)
+
+section.frontpage-main-header
+  @include media($mobile)
+    @include span-columns(4)
+    padding: 1em
+    & > dl
+      @include span-columns(3 of 4)
+  @include media($tablet)
     @include span-columns(8)
+    padding: 2em 1em
+    & > dl
+      @include span-columns(6 of 8)
+      @include shift(1)
+  @include media($desktop)
+    @include span-columns(12)
+    padding: 4em 1em
+    & > dl
+      @include span-columns(9 of 12)
+      @include shift(1)
+
+section.frontpage
+  @include media($mobile)
+    @include span-columns(4)
+    &.first
+      padding-top: 1em
+  @include media($tablet)
+    @include span-columns(6)
     @include shift(1)
+    &.first
+      padding-top: 2em
+  @include media($desktop)
+    @include span-columns(10)
+    @include shift(1)
+    &.first
+      padding-top: 4em
 
-
-
-
-// typography
-
-a
-  text-decoration: none
-  color: $link-color
-  @include transition(color 0.1s ease)
-  &:hover
-    color: $link-hover-color
 
 
 // blog posts
-
-article
+article.blog-post, .page
   padding: 1em
   header
     .title
@@ -59,6 +76,84 @@ article
       color: $subtitle-color
 
 
+// main page
+section.frontpage-main-header
+  background-color: $secondary-color
+  text-align: left
+  margin: 0
+  color: $off-whiter
+  // text-shadow: 0 0 0.2em #333
+  // box-shadow: 0 0 0.5em #000
+  dl
+    dt
+      font-weight: 300
+      margin: 0
+    dd
+      font-weight: 300
+      font-size: 100%
+      letter-spacing: normal
+      margin: 0
+
+section.frontpage
+  padding: 0 1em
+
+div.wrapper
+  @include fill-parent
+  box-shadow: 0 0 2em #000
+
+
+$visible-grid: true
 
 
 
+// typography
+body
+  font: 100% $font-stack
+  font-weight: 400
+
+section.frontpage-main-header, .frontpage
+  @include media($mobile)
+    dl
+      dt
+        font-size: 150%
+  @include media($tablet)
+    dl
+      dt
+        font-size: 225%
+  @include media($desktop)
+    dl
+      dt
+        font-size: 300%
+
+section.frontpage
+  h1
+    margin: 0.2em 0
+
+h1
+  font-weight: 300
+  font-size: 2em
+
+h2, h3, h4, h5, h6
+  font-weight: 700
+
+h2
+  font-size: 1.6em
+
+h3
+  font-size: 1.4em
+
+h4
+  font-size: 1.3em
+
+h5
+  font-size: 1.2em
+
+h6
+  font-size: 1.1em
+
+a
+  text-decoration: none
+  color: $link-color
+  @include transition(color 0.1s ease)
+  &:hover
+    color: $link-hover-color

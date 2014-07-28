@@ -1,6 +1,6 @@
 ---
 categories: [ruby-on-rails, webdev]
-title: Setting up a rails application with devise_invitable and devise_omniauthable with multiple omniauth providers
+title: Setting up a rails application with devise invitable and omniauthable with multiple omniauth providers
 layout: post
 ---
 
