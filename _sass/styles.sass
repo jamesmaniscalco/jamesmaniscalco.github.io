@@ -15,6 +15,12 @@ $mobile: new-breakpoint(min-width 0 4)
 $tablet: new-breakpoint(min-width 760px 8)
 $desktop: new-breakpoint(min-width 1050px 12)
 
+
+// @include media($mobile)
+// @include media($tablet)
+// @include media($desktop)
+
+
 content
   @include outer-container
 
@@ -74,17 +80,16 @@ section.site-header
   @include media($tablet)
     @include span-columns(8)
     & > header
-      @include span-columns(5 of 8)
-      @include shift(1)  
+      @include span-columns(6 of 8)  
     & > aside
-      @include span-columns(1 of 8)
+      @include span-columns(2 of 8)
   @include media($desktop)
     @include span-columns(12)
     & > header
-      @include span-columns(6 of 12)
-      @include shift(2)
+      @include span-columns(8 of 12)
+      //@include shift(1)
     & > aside
-      @include span-columns(1 of 12)
+      @include span-columns(4 of 12)
   aside
     @include omega
 
@@ -101,6 +106,7 @@ p.tags
 
 section.site-header
   background-color: $header-background
+  // box-shadow: inset 0 -3em 2em -3em #666
   header
     padding: 1em
   aside
@@ -114,6 +120,7 @@ section.frontpage-main-header
   color: $header-text-color
   // text-shadow: 0 0 0.2em #333
   // box-shadow: 0 0 0.5em #000
+  // box-shadow: inset 0 -3em 9em -6em #000
   dl
     dt
       font-weight: 300
@@ -196,3 +203,44 @@ a
   @include transition(color 0.1s ease)
   &:hover
     color: $link-hover-color
+
+
+
+
+// blog post header links
+article.blog-post > section
+  .header-link
+    position: absolute
+    // @include media($mobile)
+    //   right: 1em
+    //   opacity: 1
+    // @include media($tablet)
+    //   left: -1.2em
+    //   opacity: 0
+    // @include media($desktop)
+    //   left: -1.2em
+    //   opacity: 0
+    opacity: 0
+    @include media($mobile)
+      left: -2em
+    @include media($tablet)
+      left: -1.2em
+    @include media($desktop)
+      left: -1.2em
+
+    @include transition(opacity 0.2s ease-in-out 0.1s)
+
+  h2, h3, h4, h5, h6
+    // @include media($mobile)
+    // @include media($tablet)
+    //   position: relative
+    // @include media($desktop)
+    //   position: relative
+    position: relative
+
+  h2:hover .header-link,
+  h3:hover .header-link,
+  h4:hover .header-link,
+  h5:hover .header-link,
+  h6:hover .header-link
+    opacity: 1
