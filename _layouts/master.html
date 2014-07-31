@@ -10,6 +10,8 @@
 
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <link rel="canonical" href="{{ page.url }}" />
     </head>
 
     <body>
@@ -18,6 +20,7 @@
         {{ content }}
 
         </content>
+        {% include site-build-stats.html %}
     </body>
 
 
