@@ -3,32 +3,43 @@ layout: master
 ---
 
 
-
-<section class="frontpage-main-header">
-    <dl>
-        <dt>James Maniscalco</dt>
-        <dd>physicist and programmer</dd>
-    </dl>
-</section>
-
-<div class"frontpage-wrapper">
-    <section class="frontpage first">
-        <a href="/about/"><h1>About</h1></a>
-    </section>
-
-    <section class="frontpage">
-        <a href="/contact/"><h1>Contact</h1></a>
-    </section>
-
-    <section class="frontpage">
-        <a href="/cv/"><h1>Curriculum Vitae</h1></a>
-    </section>
-
-    <section class="frontpage">
-        <a href="/blog/"><h1>Blog</h1></a>
-        <p>Recent posts:</p>
-        {% for post in site.posts | limit 3 %}
-        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-        {% endfor %}
-    </section>
+<div class="header-background">
+    <div class="header">
+        <section class="frontpage-main-header">
+            <dl>
+                <dt>James Maniscalco</dt>
+                <dd>physicist and programmer</dd>
+            </dl>
+        </section>
+    </div>
 </div>
+
+
+<div class="content">
+    <div class="frontpage-wrapper">
+        <section class="frontpage first">
+            <a href="/about/"><h1>About James</h1></a>
+        </section>
+
+        <section class="frontpage">
+            <a href="/contact/"><h1>Contact</h1></a>
+        </section>
+
+        <section class="frontpage">
+            <a href="/projects/"><h1>Projects</h1></a>
+        </section>
+
+        <section class="frontpage">
+            <a href="/cv/"><h1>Curriculum Vitae</h1></a>
+        </section>
+
+        <section class="frontpage">
+            <a href="/blog/"><h1>Blog</h1></a>
+            <p>Recent blog posts:</p>
+            {% for post in site.posts | limit 3 %}
+            <p><span class="tags">{{ post.date | date: "%B %d, %Y" }} - </span><a href="{{ post.url }}">{{ post.title }}</a></p>
+            {% endfor %}
+        </section>
+    </div>
+</div>
+

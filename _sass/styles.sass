@@ -6,6 +6,9 @@ body
   background-color: $background
   position: relative
 
+html, body
+  min-height: 100%
+
 p, li
   line-height: 1.5em
 
@@ -17,15 +20,18 @@ ul, ol
 
 
 #site-build-stats
+  margin-bottom: -2em
   position: absolute
   right: 1em
   bottom: 1em
-  font-size: 0.3em
   color: #777
   opacity: 0
   @include transition(opacity 0.1s ease-in-out 0.1s)
   &:hover
     opacity: 1
+  & > h6
+    margin: 0
+    font-size: 0.8em
 
 
 
@@ -40,7 +46,12 @@ $desktop: new-breakpoint(min-width 1050px 12)
 // @include media($desktop)
 
 
-content
+div.content
+  @include outer-container
+  margin-bottom: 2em
+  min-height: 100%
+
+div.header
   @include outer-container
 
 article.blog-post, .page
@@ -75,7 +86,7 @@ section.frontpage-main-header
 
 section.frontpage
   @include media($mobile)
-    @include span-columns(3)
+    @include span-columns(4)
     &.first
       padding-top: 1em
   @include media($tablet)
@@ -114,13 +125,17 @@ section.site-header
 
 
 
+
+div.header-background
+  background-color: $header-background
+
 // blog posts
 article.blog-post, .page
   header
     .title
       font-size: 2em
 
-p.tags
+p.tags, span.tags
   color: $subtitle-color
 
 section.site-header
@@ -155,7 +170,6 @@ section.frontpage
 
 div.frontpage-wrapper
   @include fill-parent
-  box-shadow: 0 0 2em #000
 
 
 $visible-grid: true
@@ -189,6 +203,7 @@ section.site-header
     margin: 0
   aside
     text-align: right
+
 
 section.frontpage
   h1

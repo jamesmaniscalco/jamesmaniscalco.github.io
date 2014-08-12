@@ -4,6 +4,7 @@ categories: [webdev, jekyll, git]
 layout: post
 ---
 
+**UPDATE (July 31, 2014)** Well, about three days after I wrote this article, it became invalid. Github updated their version of Jekyll to 2.2.0, which incorporates SASS template rendering. However, the instructions can still be followed and modified for other plugins that aren't yet supported, like those featured [in the Jekyll docs](http://jekyllrb.com/docs/plugins/#available-plugins).
 
 [Jekyll](http://jekyllrb.com/) is a great tool for building blog-aware static sites (in fact, it's what this site runs on). [Github Pages](https://pages.github.com/) is a great companion - Github provides free static site hosting for developers, and they support Jekyll sites (the sites compile and deploy when the developer pushes changes to the `master` or `gh-pages` branch, depending on whether the site is for an organization or a project).
 
