@@ -34,6 +34,14 @@ ul, ol
     font-size: 0.8em
 
 
+// clearfix
+%clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+
 
 // sizing
 $mobile: new-breakpoint(min-width 0 4)
@@ -278,3 +286,54 @@ article.blog-post > section
   h5:hover .header-link,
   h6:hover .header-link
     opacity: 1
+
+
+
+
+// cv stuff
+div#publicationList
+  @include fill-parent
+
+div.cvItem
+  @include fill-parent
+  background-color: $cv-item-background
+  margin: 1em 0
+  border: 1px $cv-item-border-color solid
+  position: relative
+
+  .pubType
+    color: $cv-item-type-color
+    padding: 10px
+
+  .pubTitle, .pubAuthor, .pubJournal, .pubAssets
+    padding: 0
+    margin: 10px
+
+  .pubJournal
+    margin: 10px 6em 10px 10px
+
+  .pubAssets
+    float: right
+    position: absolute
+    bottom: -0.25em
+    right: 0
+    @extend %clearfix
+
+    a
+      padding-left: 0.5em
+
+
+div.proceedings
+  @extend div.cvItem
+  .pubType
+    background-color: $cv-item-proceedings-background
+
+div.peer-reviewed
+  @extend div.cvItem
+  .pubType
+    background-color: $cv-item-peer-reviewed-background
+
+
+
+
+
