@@ -12,7 +12,7 @@ function sortByYear(a, b) {
 var cvItems = [
     {
         title: 'H'+'c2'.sub()+' Measurements of Nb'+'3'.sub()+'Sn and Nitrogen-Doped Niobium Using Physical Property Measurement System',
-        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, M. Liepe, S. Posen',
+        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, M. Liepe, S. Posen, (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
@@ -23,7 +23,7 @@ var cvItems = [
     },
     {
         title: 'RF Performance Studies of Thin-Film Superconductors Using a Sample Host Cavity',
-        authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe',
+        authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe, (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
@@ -33,8 +33,41 @@ var cvItems = [
         year: 2015
     },
     {
+        title: 'Update on Nitrogen-doped 9-cell Cavity Performance in the Cornell Horizontal Test Cryomodule',
+        authors: 'D. Gonnella, R. G. Eichhorn, F. Furuta, M. Ge, D. L. Hall, Y. He, K. M. Vivian Ho, G. H. Hoffstaetter, M. Liepe, '+'J. T. Maniscalco'.bold()+', T. O\'Connell, S. Posen, P. Quigley, J. Sears, V. Veshcherevich (Cornell University (CLASSE), Ithaca, New York), A. Grassellino, C. Grimm, O. S. Melnychuk, A. S. Romanenko (Fermilab, Batavia, Illinois)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
+        published: false,
+        status: 'accepted, pending publication',
+        downloadUrl: 'https://jacowfs.jlab.org/conf/y15/ipac15/prepress/WEPTY072.PDF',
+        year: 2015
+    },
+    {
+        title: 'Update on Nitrogen Doping: Quench Studies and Sample Analysis',
+        authors: 'D. Gonnella, F. Furuta, M. Ge, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
+        published: false,
+        status: 'accepted, pending publication',
+        downloadUrl: 'https://jacowfs.jlab.org/conf/y15/ipac15/prepress/WEPTY073.PDF',
+        year: 2015
+    },
+    {
+        title: 'Recent Studies on the Current Limitations of State-of-the-Art Nb'+'3'.sub()+'Sn Cavities',
+        authors: 'D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+', S. Posen (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
+        published: false,
+        status: 'accepted, pending publication',
+        downloadUrl: 'https://jacowfs.jlab.org/conf/y15/ipac15/prepress/WEPTY074.PDF',
+        year: 2015
+    },
+    {
         title: 'The Potential of Accelerating Early Detection of Autism through Content Analysis of YouTube Videos',
-        authors: 'V. A. Fusaro, J. Daniels, M. Duda, T. F. DeLuca, O. D’Angelo, J. Tamburello, '+'J. T. Maniscalco'.bold()+', D. P. Wall',
+        authors: 'V. A. Fusaro, J. Daniels, M. Duda, T. F. DeLuca, O. D’Angelo, J. Tamburello, '+'J. T. Maniscalco'.bold()+', D. P. Wall, (Harvard Medical School, Boston, Massachusetts)',
         firstAuthor: false,
         type: 'peer-reviewed',
         journal: 'PLoS ONE',
@@ -89,19 +122,19 @@ function updateCvItems() {
     } else {
         if ($('#allTypes').prop('checked')) {
             $('.cvItem').addClass('hide');
-            $('.cvItem.supportingAuthor').removeClass('hide');
+            $('.cvItem.firstAuthor').removeClass('hide');
         };
         if ($('#peerReviewed').prop('checked')) {
             $('.cvItem').addClass('hide');
-            $('.cvItem.peer-reviewed.supportingAuthor').removeClass('hide');
+            $('.cvItem.peer-reviewed.firstAuthor').removeClass('hide');
         };
         if ($('#proceedings').prop('checked')) {
             $('.cvItem').addClass('hide');
-            $('.cvItem.proceedings.supportingAuthor').removeClass('hide');
+            $('.cvItem.proceedings.firstAuthor').removeClass('hide');
         };
         if ($('#otherType').prop('checked')) {
             $('.cvItem').addClass('hide');
-            $('.cvItem.supportingAuthor:not(.proceedings):not(.peer-reviewed)').removeClass('hide');
+            $('.cvItem.firstAuthor:not(.proceedings):not(.peer-reviewed)').removeClass('hide');
         };
     }
 
