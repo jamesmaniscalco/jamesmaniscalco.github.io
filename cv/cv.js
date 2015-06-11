@@ -11,7 +11,7 @@ function sortByYear(a, b) {
 
 var cvItems = [
     {
-        title: 'H'+'c2'.sub()+' Measurements of Nb3Sn and Nitrogen-Doped Niobium Using Physical Property Measurement System',
+        title: 'H'+'c2'.sub()+' Measurements of Nb'+'3'.sub()+'Sn and Nitrogen-Doped Niobium Using Physical Property Measurement System',
         authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, M. Liepe, S. Posen',
         leadAuthor: true,
         type: 'proceedings',
