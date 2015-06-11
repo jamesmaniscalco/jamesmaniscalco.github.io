@@ -13,7 +13,7 @@ var cvItems = [
     {
         title: 'H'+'c2'.sub()+' Measurements of Nb'+'3'.sub()+'Sn and Nitrogen-Doped Niobium Using Physical Property Measurement System',
         authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, M. Liepe, S. Posen',
-        leadAuthor: true,
+        firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
         published: false,
@@ -24,7 +24,7 @@ var cvItems = [
     {
         title: 'RF Performance Studies of Thin-Film Superconductors Using a Sample Host Cavity',
         authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe',
-        leadAuthor: true,
+        firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
         published: false,
@@ -35,7 +35,7 @@ var cvItems = [
     {
         title: 'The Potential of Accelerating Early Detection of Autism through Content Analysis of YouTube Videos',
         authors: 'V. A. Fusaro, J. Daniels, M. Duda, T. F. DeLuca, O. D’Angelo, J. Tamburello, '+'J. T. Maniscalco'.bold()+', D. P. Wall',
-        leadAuthor: false,
+        firstAuthor: false,
         type: 'peer-reviewed',
         journal: 'PLoS ONE',
         published: true,
@@ -55,7 +55,7 @@ for (var itemIndex in cvItems) {
     var newElement = document.createElement('div');
     $(newElement).addClass('cvItem');
     $(newElement).addClass(item.type);
-    $(newElement).addClass(item.leadAuthor ? 'leadAuthor' : 'supportingAuthor');
+    $(newElement).addClass(item.firstAuthor ? 'firstAuthor' : 'supportingAuthor');
     $(newElement).addClass(item.published ? 'published' : 'pending');
     $(newElement).append('<div class="pubType">'+item.type+'</div>');
     $(newElement).append('<h4 class="pubTitle">'+item.title+'</h4>');
@@ -65,3 +65,57 @@ for (var itemIndex in cvItems) {
     $('#publicationList').append(newElement);
 }
 
+
+// register on any click of the buttons:
+function updateCvItems() {
+    var transitionTime = 400;
+    // check the status of elements and add/remove 'hide' class
+    if ($('#allPublications').prop('checked')) {
+        if ($('#allTypes').prop('checked')) {
+            $('.cvItem').removeClass('hide');
+        };
+        if ($('#peerReviewed').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem.peer-reviewed').removeClass('hide');
+        };
+        if ($('#proceedings').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem.proceedings').removeClass('hide');
+        };
+        if ($('#otherType').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem:not(.proceedings):not(.peer-reviewed)').removeClass('hide');
+        };
+    } else {
+        if ($('#allTypes').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem.supportingAuthor').removeClass('hide');
+        };
+        if ($('#peerReviewed').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem.peer-reviewed.supportingAuthor').removeClass('hide');
+        };
+        if ($('#proceedings').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem.proceedings.supportingAuthor').removeClass('hide');
+        };
+        if ($('#otherType').prop('checked')) {
+            $('.cvItem').addClass('hide');
+            $('.cvItem.supportingAuthor:not(.proceedings):not(.peer-reviewed)').removeClass('hide');
+        };
+    }
+
+    // hide/show relevant elements
+    //$('.cvItem.hide').fadeOut({duration: transitionTime, queue: false}).slideUp(transitionTime);
+    //$('.cvItem:not(.hide)').fadeIn({duration: transitionTime, queue: false}).css('display', 'none').slideDown(transitionTime);
+
+    $('.cvItem.hide:visible').animate({"opacity": 0.0}, transitionTime).slideUp(transitionTime);
+
+    $('.cvItem:not(.hide):hidden').css("visibility", "hidden").slideDown(transitionTime, function() {
+        $(this).css("opacity", 0.0).css("visibility", "visible").animate({
+            "opacity": 1.0
+        }, transitionTime);
+    });
+}
+
+$('.switch').change(function() { updateCvItems() });

@@ -34,8 +34,8 @@ Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (201
     <label for="peerReviewed" class="switch-label switch-label-off">peer-reviewed</label>
     <input type="radio" class="switch-input" name="pubType" value="proceedings" id="proceedings">
     <label for="proceedings" class="switch-label switch-label-off">proceedings</label>
-    <input type="radio" class="switch-input" name="pubType" value="other" id="other">
-    <label for="other" class="switch-label switch-label-off">other</label>
+    <input type="radio" class="switch-input" name="pubType" value="otherType" id="otherType">
+    <label for="otherType" class="switch-label switch-label-off">other</label>
   </div>
 </div>
 
