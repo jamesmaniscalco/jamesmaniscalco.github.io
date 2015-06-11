@@ -64,3 +64,4 @@ for (var itemIndex in cvItems) {
     $(newElement).append('<div class="pubJournal">'+item.journal+' '+(item.published ? ', '+item.year+'.' : ('('+item.status+')').italics()+'.')+'</div>');
     $('#publicationList').append(newElement);
 }
+
