@@ -17,6 +17,54 @@ BS Physics, Honors, 2014
 Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (2013), Presidential Global Scholarship (2013), Lawrence Award for Undergraduate Scholastic Excellence (x4, annual), Dean's list (x10, semesterly), Huntington 100 (2014)
 
 
+---
+
+
+##Research and Work
+
+###Graduate Research Assistant
+
+2014-present
+
+Superconducting RF Accelerator Group  
+Cornell University (CLASSE)  
+Supervisor: Matthias Liepe  
+
+###Ruby on Rails Consultant
+
+2021-2014
+
+Muckypaw, LLC  
+
+###Lawrence Coop Fellow
+
+2013
+
+Department of Physics  
+Northeastern University (based at CERN)  
+Supervisor: Darien Wood
+
+###Research Assistant
+
+2011-2013
+
+The Wall Lab  
+Harvard Medical School  
+Supervisor: Dennis Wall
+
+###IGERT Associate
+
+2010-2011
+
+IGERT Nanomedicine Program  
+Northeastern University  
+Supervisor: Sri Sridhar
+
+
+---
+
+
+
 
 ##Publications
 

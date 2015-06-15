@@ -12,7 +12,7 @@ function sortByYear(a, b) {
 var cvItems = [
     {
         title: 'H'+'c2'.sub()+' Measurements of Nb'+'3'.sub()+'Sn and Nitrogen-Doped Niobium Using Physical Property Measurement System',
-        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, M. Liepe, S. Posen, (Cornell University (CLASSE), Ithaca, New York)',
+        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, M. Liepe, S. Posen (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
@@ -23,7 +23,7 @@ var cvItems = [
     },
     {
         title: 'RF Performance Studies of Thin-Film Superconductors Using a Sample Host Cavity',
-        authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe, (Cornell University (CLASSE), Ithaca, New York)',
+        authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of the 6'+'th'.sup()+' International Particle Accelerator Conference (IPAC)',
@@ -67,7 +67,7 @@ var cvItems = [
     },
     {
         title: 'The Potential of Accelerating Early Detection of Autism through Content Analysis of YouTube Videos',
-        authors: 'V. A. Fusaro, J. Daniels, M. Duda, T. F. DeLuca, O. D’Angelo, J. Tamburello, '+'J. T. Maniscalco'.bold()+', D. P. Wall, (Harvard Medical School, Boston, Massachusetts)',
+        authors: 'V. A. Fusaro, J. Daniels, M. Duda, T. F. DeLuca, O. D’Angelo, J. Tamburello, '+'J. T. Maniscalco'.bold()+', D. P. Wall (Harvard Medical School, Boston, Massachusetts)',
         firstAuthor: false,
         type: 'peer-reviewed',
         journal: 'PLoS ONE',
