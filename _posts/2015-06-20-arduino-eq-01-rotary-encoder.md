@@ -219,6 +219,6 @@ void loop() {
 
 {% endhighlight %}
 
-Alrighty! Everything seems to work with the rotary encoder. There's also a pushbutton switch, as I mentioned earlier, but adding that into the input loop should be no problem. I'll come back to it later, when I start working on the user interface.
+Alrighty! Everything seems to work with the rotary encoder. I could probably stand to DRY up all those `while   ` statements at the end there, but I'll reapproach it when I come back to the rotary encoder. There's also a pushbutton switch, as I mentioned earlier, but adding that into the input loop should be no problem. I'll come back to it later, when I start working on the user interface.
 
 Check back soon for updates on the project!
