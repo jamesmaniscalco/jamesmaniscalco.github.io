@@ -31,7 +31,7 @@ So I figured out a third method as an alternative to the first two. The gist is 
 - wait for the first pin to go high again
 - wait for the second pin to go high
 
-Further, during each of the "wait" steps, the loop checks a timer to make sure it's not waiting too long. I set this to 300 milliseconds, since I think that should be more than enough time for a slow knob-turner to finish a full cycle (it usually takes about 30 milliseconds).
+Further, during each of the "wait" steps, the loop checks a timer to make sure it's not waiting too long. I set this to 200 milliseconds, since I think that should be more than enough time for a slow knob-turner to finish a full cycle (it usually takes about 30 milliseconds).
 
 One issue is that some events might still get missed, especially if they happen quickly; fortunately, I think this will only really happen if the knob is spun very quickly, and in that case a few interstitial missed events shouldn't be a big deal.
 
@@ -73,7 +73,7 @@ volatile int inputRegistered = 0;
 // keep track of the time
 unsigned long currentTime;
 unsigned long loopTime;
-unsigned long loopLength = 300;
+unsigned long loopLength = 200;
 
 
 
@@ -138,6 +138,12 @@ void readEncoder() {
   encoderB = digitalRead(encoderPinB);
 }
 
+void readEncoderInWhile() {
+  delay(1);   // ignores noise in switch transition
+  currentTime = millis();  // get time so we don't wait too long
+  readEncoder();
+}
+
 
 
 void setup() {
@@ -173,36 +179,30 @@ void loop() {
     if (!(encoderA)) {  // first check if encoder A goes to LOW
       // now we expect the CW sequence: B low, A high, B high
       while (encoderB) {  // wait until B goes low...
-        currentTime = millis();  // but don't wait too long:
-        readEncoder();
+        readEncoderInWhile();
         if ( currentTime >= loopTime + loopLength ) return;
       }
       while (!(encoderA)) {  // now wait until A goes high
-        currentTime = millis();
-        readEncoder();
+        readEncoderInWhile();
         if ( currentTime >= loopTime + loopLength ) return;
       }
       while (!(encoderB)) {  // finally wait until B goes high
-        currentTime = millis();
-        readEncoder();
+        readEncoderInWhile();
         if ( currentTime >= loopTime + loopLength ) return;
       }
       inputRegistered = 1;  // register this as a clockwise step
     } else if (!(encoderB)) {  // if encoder A didn't go low, check if B did
       // now we expect the CCW sequence: A low, B high, A high
       while (encoderA) {  // wait until A goes low...
-        currentTime = millis();  // but don't wait too long:
-        readEncoder();
+        readEncoderInWhile();
         if ( currentTime >= loopTime + loopLength ) return;
       }
       while (!(encoderB)) {  // now wait until B goes high
-        currentTime = millis();
-        readEncoder();
+        readEncoderInWhile();
         if ( currentTime >= loopTime + loopLength ) return;
       }
       while (!(encoderA)) {  // finally wait until A goes high
-        currentTime = millis();
-        readEncoder();
+        readEncoderInWhile();
         if ( currentTime >= loopTime + loopLength ) return;
       }
       inputRegistered = 2;  // register this as a CCW step
@@ -219,6 +219,6 @@ void loop() {
 
 {% endhighlight %}
 
-Alrighty! Everything seems to work with the rotary encoder. I could probably stand to DRY up all those `while` statements at the end there, but I'll reapproach it when I come back to the rotary encoder. There's also a pushbutton switch, as I mentioned earlier, but adding that into the input loop should be no problem. I'll come back to it later, when I start working on the user interface.
+Alrighty! Everything seems to work with the rotary encoder. It's not totally perfect: if you spin the encoder back and forth quickly, sometimes if gets the spins in the wrong direction. I'll have to look into that soon. Also, I could probably stand to DRY up all those `while` statements at the end there a bit more, but I'll reapproach it when I come back to the rotary encoder. There's also a pushbutton switch in the rotary encoder, as I mentioned earlier, but adding that into the input loop should be no problem. I'll come back to it later, when I start working on the user interface.
 
 Check back soon for updates on the project!
