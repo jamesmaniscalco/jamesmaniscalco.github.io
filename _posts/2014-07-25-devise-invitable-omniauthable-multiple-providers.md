@@ -1,5 +1,5 @@
 ---
-categories: [ruby-on-rails, webdev]
+categories: [ruby-on-rails, webdev, programming]
 title: Setting up a rails application with devise invitable and omniauthable with multiple omniauth providers
 layout: post
 ---

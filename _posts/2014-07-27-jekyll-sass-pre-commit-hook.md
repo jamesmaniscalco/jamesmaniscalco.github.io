@@ -1,6 +1,6 @@
 ---
 title: Pre-compiling Sass for Jekyll on Github Pages
-categories: [webdev, jekyll, git]
+categories: [webdev, jekyll, git, programming]
 layout: post
 ---
 
