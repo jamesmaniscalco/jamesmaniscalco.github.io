@@ -9,12 +9,12 @@ title: Curriculum Vitae
 
 Physics PhD student (expected 2019)  
 Superconducting RF Accelerator Group  
-Supervisor: Matthias Liepe  
+Supervisor: Prof. Matthias Liepe  
 
 ###Northeastern University
 
 BS Physics, Honors, 2014  
-Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (2013), Presidential Global Scholarship (2013), Lawrence Award for Undergraduate Scholastic Excellence (x4, annual), Dean's list (x10, semesterly), Huntington 100 (2014)
+Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (2013), Presidential Global Scholarship (2013), Lawrence Award for Undergraduate Scholastic Excellence (x4, annual), Dean's list (x10, semesterly), Hodgkinson Award (2014), Huntington 100 (2014)
 
 
 ---
