@@ -11,6 +11,109 @@ function sortByYear(a, b) {
 
 var cvItems = [
     {
+        title: 'The Importance of the Electron Mean Free Path for Superconducting Radio-Frequency Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'peer-reviewed',
+        journal: 'Journal of Applied Physics '+'121'.bold()+', 043910',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://aip.scitation.org/doi/pdf/10.1063/1.4974909',
+        year: 2017
+    }, 
+
+
+    {
+        title: 'Improved N-Doping Protocols for SRF Cavities',
+        authors: 'D. Gonnella, R. Eichhorn, F. Furuta, M. Ge, T. Gruber, G. Hoffstaetter, J. Kaufman, P.N. Koufalis, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr025.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'New Material Studies in the Cornell Sample Host Cavity',
+        authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe, (Cornell University (CLASSE), Ithaca, New York), O.B. Malyshev, R. Valizadeh (ASTeC, STFC Daresbury Laboratory, Warrington, UK), S. Wilde (ASTeC and Department of Physics, Loughborough University, Loughborough, UK)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr029.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'Surface Analysis Studies of Nb'+'3'.sub()+'Sn Thin Films',
+        authors: 'D. L. Hall, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr023.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'RF Measurements on High Performance Nb'+'3'.sub()+'Sn Cavities',
+        authors: 'D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr024.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'Dependence of Surface Resistance on N-Doping Level',
+        authors: 'D. Gonnella, F. Furuta, M. Ge, J. Kaufman, P. N. Koufalis, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr027.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'Studies on the Field-Dependence of the BCS Surface Resistance',
+        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, G. H. Hoffstaetter, P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr028.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'Pulsed Field Limits in SRF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, D. L. Hall, P. N. Koufalis, and M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/wepmr030.pdf',
+        year: 2016
+    }, 
+    {
+        title: 'Impurity-Doping of Superconducting RF Cavities',
+        authors: 'P. N. Koufalis, F. Furuta, M. Ge, D. Gonnella, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2016, Busan, Korea',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2016/papers/thobb02.pdf',
+        year: 2016
+    },  
+
+
+    {
         title: 'Understanding the Field Dependence of Surface Resistance in Nitrogen-Doped Cavities',
         authors: 'P. N. Koufalis, D. Gonnella, M. Liepe, '+'J. T. Maniscalco'.bold()+', I. Packtor (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: false,
@@ -23,7 +126,7 @@ var cvItems = [
     },   
     {
         title: 'Developing a Setup to Measure Field Dependence of BCS Surface Resistance',
-        authors: 'J. T. Maniscalco'.bold()+'and M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        authors: 'J. T. Maniscalco'.bold()+' and M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'proceedings',
         journal: 'Proceedings of SRF2015, Whistler, BC, Canada',
