@@ -18,7 +18,7 @@ Out of the box, Devise provides support for authenticating users by email and pa
 
 In my research before I tackled this problem, I came across [this stackoverflow answer](http://stackoverflow.com/questions/21249749/rails-4-devise-omniauth-with-multiple-providers) which proved to be very helpful. My method below is largely devised from [Alex Tonkonozhenko's](http://stackoverflow.com/users/2539916/alex-tonkonozhenko) answer.
 
-##Omniauthable
+## Omniauthable
 
 Before we get started with `devise_invitable`, let's handle setting up `devise_omniauthable` with multiple providers.
 
@@ -97,7 +97,7 @@ end
 Now that our controllers are set up, let's move on to creating our new models.
 
 
-###Creating Authorization model
+### Creating Authorization model
 
 
 Create the migration file for our new model:
@@ -158,7 +158,7 @@ end
 {% endhighlight %}
 
 
-###Making changes to the user model
+### Making changes to the user model
 
 
 Next, we need to make a few changes to the user model to provide the methods required by the new controller.
@@ -203,13 +203,13 @@ end
 {% endhighlight %}
 
 
-###Setting up your omniauth providers
+### Setting up your omniauth providers
 
 Finally, in order for you to be actually use the sites you chose as omniauth providers, you need to register your application with the providers. Below I give instructions for setting up Google and Facebook for authentication.
 
 In general, you need to give your application's domain name and the callback path for the Devise omniauth authentication callback (the path that the omniauth provider will redirect your user's browser when he successfully authenticates). By default, this path is `/auth/:provider/callback`. Check `user_omniauth_callback` in the output of `rake routes` to be sure. If you have `:path` set up in your Devise route configuration, you will need to prepend your callback path with the Devise path, i.e. `/accounts/auth/:provider/callback`.
 
-####Storing your omniauth keys
+#### Storing your omniauth keys
 
 For storing my omniauth authentication keys, I use a file called `.env` stored in my Rails application root directory. I generally use [foreman](https://github.com/ddollar/foreman) to spin up my applications, which loads any keys stored in `.env` as environment variables. The file uses the following syntax:
 
@@ -230,13 +230,13 @@ If you're using version control like Git (which you definitely should be doing),
 
 Anyways, on with the show:
 
-####Setting up Google
+#### Setting up Google
 
 The `omniauth-google-oauth2` gem has detailed instructions [in the readme](https://github.com/zquestz/omniauth-google-oauth2#google-api-setup), so I won't go into too much detail here. Also see the [google developer docs](https://developers.google.com/accounts/docs/OAuth2) for more information.
 
 For the callback URL, use your domain followed by `/auth/google_oauth2/callback`. If you're on localhost, the path is `http://localhost:8080/auth/google_oauth2/callback`, assuming you are using `8080` as your server port on `localhost`.
 
-####Setting up Facebook
+#### Setting up Facebook
 
 Facebook changes their policies frequently and without much notice; as such these instructions might be out of date.
 
@@ -246,7 +246,7 @@ In the Settings panel, put in your app's domain in the App Domains field. Click 
 
 In the Advanced tab of the Settings panel, in the Security section, under Valid OAuth redirect URIs, enter `http://{your domain here}/accounts/auth/facebook/callback`.
 
-#####Working with localhost
+##### Working with localhost
 You can create another app and set it to be the test version of your primary app; this will allow you to use localhost as the server.
 
 Follow the same instructions for the main site, but with the following changes:
@@ -255,7 +255,7 @@ Follow the same instructions for the main site, but with the following changes:
 - Site URL: `http://localhost:8080/`
 - Valid OAuth redirect URIs: `http://localhost:8080/auth/facebook/callback`
 
-###Making views friendly
+### Making views friendly
 
 Since the `:provider` name isn't necessarily user-friendly, modify `views/devise/shared/_links.html.erb` to use the nice names we defined in the User model (we're changing the `link_to` text):
 
@@ -270,7 +270,7 @@ Since the `:provider` name isn't necessarily user-friendly, modify `views/devise
 
 {% endhighlight %}
 
-##Invitable
+## Invitable
 
 Now that we have `devise_omniauthable` set up with the `Authorization` model, we can move on to allowing users to invite other users with the `devise_invitable` gem. This module is not included in the main Devise gem, but it's a well-supported add-on.
 

@@ -3,15 +3,15 @@ layout: page
 title: Curriculum Vitae
 ---
 
-##Education
+## Education
 
-###Cornell University
+### Cornell University
 
 Physics PhD student (expected 2019)  
 Superconducting RF Accelerator Group  
 Supervisor: Prof. Matthias Liepe  
 
-###Northeastern University
+### Northeastern University
 
 BS Physics, Honors, 2014  
 Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (2013), Presidential Global Scholarship (2013), Lawrence Award for Undergraduate Scholastic Excellence (x4, annual), Dean's list (x10, semesterly), Hodgkinson Award (2014), Huntington 100 (2014)
@@ -20,9 +20,9 @@ Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (201
 ---
 
 
-##Research and Work
+## Research and Work
 
-###Graduate Research Assistant
+### Graduate Research Assistant
 
 2014-present
 
@@ -30,13 +30,13 @@ Superconducting RF Accelerator Group
 Cornell University (CLASSE)  
 Supervisor: Matthias Liepe  
 
-###Ruby on Rails Consultant
+### Ruby on Rails Consultant
 
 2021-2014
 
 Muckypaw, LLC  
 
-###Lawrence Coop Fellow
+### Lawrence Coop Fellow
 
 2013
 
@@ -44,7 +44,7 @@ Department of Physics
 Northeastern University (based at CERN)  
 Supervisor: Darien Wood
 
-###Research Assistant
+### Research Assistant
 
 2011-2013
 
@@ -52,7 +52,7 @@ The Wall Lab
 Harvard Medical School  
 Supervisor: Dennis Wall
 
-###IGERT Associate
+### IGERT Associate
 
 2010-2011
 
@@ -66,7 +66,7 @@ Supervisor: Sri Sridhar
 
 
 
-##Publications
+## Publications
 
 <div id="publicationButtons">
   <div id="authorButtons" class="switch">

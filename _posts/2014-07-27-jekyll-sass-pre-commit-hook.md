@@ -11,7 +11,7 @@ layout: post
 Jekyll also provides good plugin support, and [many are available](http://jekyllrb.com/docs/plugins/#available-plugins). However, the version of Jekyll supported on Pages is currently outdated - [the dependency page reports](https://pages.github.com/versions/) Jekyll version 1.5.1 as the supported release, at least several months out of date (the most recent version of Jekyll at the time of writing is 2.1.1).
 
 
-##The problem
+## The problem
 
 The emerging problem is that stylesheets written in Sass, which in version 2.1 are automatically compiled to CSS (Jekyll 2 includes [Jekyll Compass](https://github.com/mscharley/jekyll-compass) as part of the core application), are not compiled in the earlier version on Github's servers.
 
@@ -20,7 +20,7 @@ For the earlier release, we might think to use the `jekyll-compass` plugin to co
 So, what's the solution?
 
 
-##The solution
+## The solution
 
 The simplest solution at this point would be to build the site, manually copy the compiled stylesheets into the site's root directory, commit, and push the changes to Github, thus deploying the site:
 
