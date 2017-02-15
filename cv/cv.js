@@ -19,6 +19,7 @@ var cvItems = [
         published: true,
         status: 'published',
         downloadUrl: 'http://aip.scitation.org/doi/pdf/10.1063/1.4974909',
+        externalUrl: 'http://aip.scitation.org/doi/10.1063/1.4974909',
         year: 2017
     }, 
 
@@ -311,7 +312,7 @@ for (var itemIndex in cvItems) {
     $(newElement).append('<h4 class="pubTitle">'+item.title+'</h4>');
     $(newElement).append('<div class="pubAuthor">'+item.authors+'</div>');
     $(newElement).append('<div class="pubAssets">'+(item.downloadUrl ? '<a href="'+item.downloadUrl+'"><i class="fa fa-2x fa-download"></i></a>' : '' )+(item.externalUrl ? '<a href="'+item.externalUrl+'"><i class="fa fa-2x fa-external-link"></i></a>' : '' )+'</div>');
-    $(newElement).append('<div class="pubJournal">'+item.journal+' '+(item.published ? ', '+item.year+'.' : ('('+item.status+')').italics()+'.')+'</div>');
+    $(newElement).append('<div class="pubJournal">'+item.journal+(item.published ? ', '+item.year+'.' : ('('+item.status+')').italics()+'.')+'</div>');
     $('#publicationList').append(newElement);
 }
 
