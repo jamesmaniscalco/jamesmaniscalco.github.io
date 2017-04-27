@@ -3,13 +3,18 @@ layout: page
 title: Curriculum Vitae
 ---
 
+[Education](#education) --- [Research and Work](#research-and-work) --- [Leadership, Outreach, and Teaching](#leadership-outreach-and-teaching) --- [Publications](#publications)  
+
+---
+
 ## Education
 
 ### Cornell University
 
-Physics PhD student (expected 2019)  
+Physics PhD candidate (expected 2019)  
 Superconducting RF Accelerator Group  
 Supervisor: Prof. Matthias Liepe  
+Honors and Accolades: Douglas Fitchen Memorial Award (2016, 2017)
 
 ### Northeastern University
 
@@ -32,9 +37,11 @@ Supervisor: Matthias Liepe
 
 ### Ruby on Rails Consultant
 
-2021-2014
+2011-2014
 
-Muckypaw, LLC  
+Muckypaw LLC  
+Cambridge, MA
+
 
 ### Lawrence Coop Fellow
 
@@ -64,6 +71,40 @@ Supervisor: Sri Sridhar
 ---
 
 
+## Leadership, Outreach, and Teaching
+
+### Student Liason
+
+2016-present
+
+The Center For Bright Beams  
+Cornell University  
+
+### Graduate Mentor for REU Students
+
+2015, 2016
+
+Superconducting RF Accelerator Group  
+Cornell University (CLASSE)  
+
+
+### Teaching Assistant / Laboratory Teaching Assistant
+
+2016
+
+Department of Physics  
+Cornell University  
+
+### Tutor/Mentor
+
+2009-2014
+
+
+MathPOWER  
+Boston, MA
+
+
+---
 
 
 ## Publications
