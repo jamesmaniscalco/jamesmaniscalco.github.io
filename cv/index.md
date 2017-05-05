@@ -3,7 +3,11 @@ layout: page
 title: Curriculum Vitae
 ---
 
-[Education](#education) --- [Research and Work](#research-and-work) --- [Leadership, Outreach, and Teaching](#leadership-outreach-and-teaching) --- [Publications](#publications)  
+
+[Education](#education)  
+[Research and Work](#research-and-work)  
+[Leadership, Outreach, and Teaching](#leadership-outreach-and-teaching)  
+[Publications](#publications)  
 
 ---
 
