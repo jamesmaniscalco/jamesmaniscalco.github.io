@@ -11,6 +11,138 @@ function sortByYear(a, b) {
 
 var cvItems = [
     {
+        title: 'Cornell Sample Host Cavity: Recent Results',
+        authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe, R. Porter (Cornell University (CLASSE), Ithaca, New York), V. Arrieta, S. McNeal, B. Williams (Ultramet, Pacoima, California)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2017, Copenhagen, Denmark',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2017/papers/mopva123.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Analysis of Mean Free Path and Field-Dependent Surface Resistance',
+        authors: 'J. T. Maniscalco'.bold()+', F. Furuta, D. L. Hall, P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2017, Copenhagen, Denmark',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2017/papers/wepva145.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Quench Studies in Single-Cell Nb'+'3'.sub()+'Sn Coating Using Vapour Diffusion',
+        authors: 'D. L. Hall, P. Cueva, D. B. Liarte, M. Liepe, '+'J. T. Maniscalco'.bold()+', D. A. Muller, R. Porter, J. P. Sethna (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2017, Copenhagen, Denmark',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2017/papers/mopva116.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Surface Analysis of Features Seen on Nb'+'3'.sub()+'Sn Coupons Grown by Vapour Diffusion',
+        authors: 'D. L. Hall, T. Arias, P. Cueva, M. Liepe, '+'J. T. Maniscalco'.bold()+', D. A. Muller, R. Porter, N. Sitaraman (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2017, Copenhagen, Denmark',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2017/papers/mopva119.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Effectiveness of Chemical Treatments for Reducing the Surface Roughness of Nb'+'3'.sub()+'Sn',
+        authors: 'R. Porter, F. Furuta, D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2017, Copenhagen, Denmark',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2017/papers/mopva124.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Sample Host Cavity Design for Measuring Flux Entry and Quench',
+        authors: 'R. Porter, M. Liepe, '+'J. T. Maniscalco'.bold()+', V. Veshcherevich (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2017, Copenhagen, Denmark',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2017/papers/mopva126.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Investigation of the Origin of the Anti-Q-Slope',
+        authors: 'J. T. Maniscalco'.bold()+', M. Ge, D. Gonnella, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of NAPAC2016, Chicago, IL',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/napac2016/papers/mopob65.pdf',
+        year: 2016
+    }, 
+
+    {
+        title: 'High Performance Next-Generation Nb'+'3'.sub()+'Sn Cavities for Future High-Efficiency SRF Linacs',
+        authors: 'D. L. Hall, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+', R. Porter (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2016, East Lansing, MI',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/linac2016/papers/tuop07.pdf',
+        year: 2016
+    }, 
+
+    {
+        title: 'Low Temperature Nitrogen Baking of an SRF Cavity',
+        authors: 'P. N. Koufalis, F. Furuta, M. Ge, D. Gonnella, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+', R. Porter (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2016, East Lansing, MI',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/linac2016/papers/tuprc025.pdf',
+        year: 2016
+    }, 
+
+    {
+        title: 'Surface Roughness Effect on the Performance of Nb'+'3'.sub()+'Sn Cavities',
+        authors: 'R. Porter, D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2016, East Lansing, MI',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/linac2016/papers/moprc027.pdf',
+        year: 2016
+    }, 
+
+    {
+        title: 'Optimal Doping Level to Reach High Q'+'0'.sub(),
+        authors: 'D. Gonnella, T. Gruber, J. Kaufman, P. N. Koufalis, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2016, East Lansing, MI',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/linac2016/papers/tuplr025.pdf',
+        year: 2016
+    }, 
+
+    {
         title: 'The Importance of the Electron Mean Free Path for Superconducting Radio-Frequency Cavities',
         authors: 'J. T. Maniscalco'.bold()+', D. Gonnella, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
