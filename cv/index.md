@@ -16,7 +16,7 @@ title: Curriculum Vitae
 ### Cornell University
 
 Physics PhD candidate (expected 2019)  
-Superconducting RF Accelerator Group  
+Superconducting RF Accelerator Physics  
 Supervisor: Prof. Matthias Liepe  
 Honors and Accolades: Douglas Fitchen Memorial Award (2016, 2017)
 
@@ -127,8 +127,8 @@ Boston, MA
     <label for="peerReviewed" class="switch-label switch-label-off">peer-reviewed</label>
     <input type="radio" class="switch-input" name="pubType" value="proceedings" id="proceedings">
     <label for="proceedings" class="switch-label switch-label-off">proceedings</label>
-    <input type="radio" class="switch-input" name="pubType" value="otherType" id="otherType">
-    <label for="otherType" class="switch-label switch-label-off">other</label>
+    <input type="radio" class="switch-input" name="pubType" value="talks" id="talks">
+    <label for="talks" class="switch-label switch-label-off">talks</label>
   </div>
 </div>
 

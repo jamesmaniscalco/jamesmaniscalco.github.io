@@ -11,6 +11,189 @@ function sortByYear(a, b) {
 
 var cvItems = [
     {
+        title: 'A Computational Method for More Accurate Measurements of the Surface Resistance in SRF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'Updates on the DC Field Dependence Cavity',
+        authors: 'J. T. Maniscalco'.bold()+', M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'Modeling of the Frequency and Field Dependence of the Surface Resistance of Impurity-Doped Niobium',
+        authors: 'J. T. Maniscalco'.bold()+', P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'RF Test Result of N-Doped 500 MHz B-Cell Cavity at Cornell With BNL',
+        authors: 'F. Furuta, M. Ge, T. Gruber, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+', J. Sears (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'Experimental Results on the Field and Frequency Dependence of the Surface Resistance of Niobium Cavities',
+        authors: 'P. N. Koufalis, M. Liepe, '+'J. T. Maniscalco'.bold()+', T. E. Oseroff (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'Frequency Tuner Development at Cornell for the RAON Half Wave Resonators',
+        authors: 'M. Ge, F. Furuta, T. Gruber, S. W. Hartman, M. Liepe, '+'J. T. Maniscalco'.bold()+', T. I. O\'Connell, P. J. Pamel, J. Sears, V. Veshcherevich (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'Performance of the Prototype SRF Half-Wave-Resonators Tested at Cornell for the RAON Project',
+        authors: 'M. Ge, F. Furuta, T. Gruber, S. W. Hartman, M. Liepe, '+'J. T. Maniscalco'.bold()+', T. I. O\'Connell, P. J. Pamel, J. Sears, V. Veshcherevich (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'Performance of Samples With Novel SRF Materials and Growth Techniques',
+        authors: 'T. E. Oseroff, M. Ge, M. Liepe, '+'J. T. Maniscalco'.bold()+', R. D. Porter (Cornell University (CLASSE), Ithaca, New York), S. R. McNeal (Ultramet, Pacoima, California), M. J. Sowa (Veeco-CNT, Medford, Massachusetts)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
+        published: true,
+        status: 'pending',
+        year: 2018
+    }, 
+
+    {
+        title: 'The Importance of the Electron Mean Free Path for Superconducting RF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/tuyaa01.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Design Updates on Cavity to Measure Suppression of Microwave Surface Resistance by DC Magnetic Fields',
+        authors: 'J. T. Maniscalco'.bold()+', M. Liepe, R. D. Porter (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/thpb005.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Analysis of the Anti-Q-Slope in Low-temperature Doped Niobium Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', F. Furuta, P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        year: 2017
+    }, 
+
+    {
+        title: 'Low-Temperature Doping of Niobium Cavities: What is Really Going On?',
+        authors: 'P. N. Koufalis, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/tuxba01.pdf',
+        year: 2017
+    }, 
+
+    {
+        title: 'Update on Sample Host Cavity Design Work for Measuring Flux Entry and Quench Field',
+        authors: 'R. D. Porter, M. Liepe, '+'J. T. Maniscalco'.bold()+', R. A. Strauss (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/thpb044.pdf',
+        year: 2017
+    },
+
+    {
+        title: 'Effect of Chemical Treatments on the Surface Roughness and Surface Magnetic Field Enhancement of Niobium-3-Tin Films for Superconducting Radio Frequency Cavities',
+        authors: 'R. D. Porter, F. Furuta, D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/thpb043.pdf',
+        year: 2017
+    },
+
+    {
+        title: 'High-Performance Thin Film Niobium Produced by Chemical Vapor Deposition',
+        authors: 'R. D. Porter, D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/wexa03.pdf',
+        year: 2017
+    },
+
+    {
+        title: 'High-Frequency SRF Cavities',
+        authors: 'T. E. Oseroff, D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2017, Lanzhou, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/srf2017/papers/tupb009.pdf',
+        year: 2017
+    },
+
+    {
         title: 'Cornell Sample Host Cavity: Recent Results',
         authors: 'J. T. Maniscalco'.bold()+', D. L. Hall, M. Liepe, R. Porter (Cornell University (CLASSE), Ithaca, New York), V. Arrieta, S. McNeal, B. Williams (Ultramet, Pacoima, California)',
         firstAuthor: true,
@@ -465,9 +648,9 @@ function updateCvItems() {
             $('.cvItem').addClass('hide');
             $('.cvItem.proceedings').removeClass('hide');
         };
-        if ($('#otherType').prop('checked')) {
+        if ($('#talks').prop('checked')) {
             $('.cvItem').addClass('hide');
-            $('.cvItem:not(.proceedings):not(.peer-reviewed)').removeClass('hide');
+            $('.cvItem.talk').removeClass('hide');
         };
     } else {
         if ($('#allTypes').prop('checked')) {
@@ -482,9 +665,9 @@ function updateCvItems() {
             $('.cvItem').addClass('hide');
             $('.cvItem.proceedings.firstAuthor').removeClass('hide');
         };
-        if ($('#otherType').prop('checked')) {
+        if ($('#talks').prop('checked')) {
             $('.cvItem').addClass('hide');
-            $('.cvItem.firstAuthor:not(.proceedings):not(.peer-reviewed)').removeClass('hide');
+            $('.cvItem.firstAuthor.talk').removeClass('hide');
         };
     }
 
