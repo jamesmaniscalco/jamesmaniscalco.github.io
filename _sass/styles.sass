@@ -341,17 +341,17 @@ div.cvItem
 
 
 div.proceedings
-  @extend div.cvItem
+  @extend div, .cvItem
   .pubType
     background-color: $cv-item-proceedings-background
 
 div.peer-reviewed
-  @extend div.cvItem
+  @extend div, .cvItem
   .pubType
     background-color: $cv-item-peer-reviewed-background
 
 div.talk
-  @extend div.cvItem
+  @extend div, .cvItem
   .pubType
     background-color: $cv-item-talk-background
 

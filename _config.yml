@@ -6,5 +6,5 @@ permalink: /blog/:year/:month/:day/:title.html
 
 exclude: [README.md]
 
-gems:
+plugins:
   - jekyll-sitemap
