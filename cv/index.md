@@ -15,14 +15,14 @@ title: Curriculum Vitae
 
 ### Cornell University
 
-Physics PhD candidate (expected 2019)  
+Physics Ph.D. candidate (expected 2019)  
 Superconducting RF Accelerator Physics  
 Supervisor: Prof. Matthias Liepe  
-Honors and Accolades: Douglas Fitchen Memorial Award (2016, 2017)
+Honors and Accolades: Douglas Fitchen Memorial Award (2016, 2017), LINAC2018 Student Poster Prize (2<sup>nd</sup> place 2018)
 
 ### Northeastern University
 
-BS Physics, Honors, 2014  
+B.S. Physics, Honors, 2014  
 Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (2013), Presidential Global Scholarship (2013), Lawrence Award for Undergraduate Scholastic Excellence (x4, annual), Dean's list (x10, semesterly), Hodgkinson Award (2014), Huntington 100 (2014)
 
 
@@ -77,16 +77,24 @@ Supervisor: Sri Sridhar
 
 ## Leadership, Outreach, and Teaching
 
+### Outreach Laboratory Assistant
+
+2017, 2018
+
+Xraise / The Center for Bright Beams  
+Cornell University (CLASSE)  
+["CLASSE is Upward Bound"](https://www.classe.cornell.edu/NewsAndEvents/UpwardBoundSep18.html)
+
 ### Student Liason
 
-2016-present
+2016-2018
 
-The Center For Bright Beams  
+The Center for Bright Beams  
 Cornell University  
 
 ### Graduate Mentor for REU Students
 
-2015, 2016
+2015-2018
 
 Superconducting RF Accelerator Group  
 Cornell University (CLASSE)  
