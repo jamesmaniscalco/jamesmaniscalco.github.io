@@ -85,7 +85,7 @@ Xraise / The Center for Bright Beams
 Cornell University (CLASSE)  
 ["CLASSE is Upward Bound"](https://www.classe.cornell.edu/NewsAndEvents/UpwardBoundSep18.html)
 
-### Student Liason
+### Student Liaison
 
 2016-2018
 
