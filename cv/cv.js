@@ -17,7 +17,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf042.pdf',
         year: 2018
     }, 
 
@@ -28,7 +29,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf044.pdf',
         year: 2018
     }, 
 
@@ -39,7 +41,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf046.pdf',
         year: 2018
     }, 
 
@@ -50,7 +53,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf036.pdf',
         year: 2018
     }, 
 
@@ -61,7 +65,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf039.pdf',
         year: 2018
     }, 
 
@@ -72,7 +77,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf043.pdf',
         year: 2018
     }, 
 
@@ -83,7 +89,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf045.pdf',
         year: 2018
     }, 
 
@@ -94,7 +101,8 @@ var cvItems = [
         type: 'proceedings',
         journal: 'Proceedings of IPAC2018, Vancouver, BC, Canada',
         published: true,
-        status: 'pending',
+        status: 'published',
+        downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf047.pdf',
         year: 2018
     }, 
 
