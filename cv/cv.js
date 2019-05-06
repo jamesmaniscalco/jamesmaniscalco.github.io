@@ -10,6 +10,115 @@ function sortByYear(a, b) {
 }
 
 var cvItems = [
+
+    {
+        title: 'Vertical EP and Green EP Progress at Cornell',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC) Meeting, Vancouver, BC, Canada, Febuary 2019',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.desy.de/indico/event/21337/session/11/contribution/79/material/slides/0.pptx',
+        year: 2019
+    },
+
+    {
+        title: 'Infusion R&D at Cornell',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC) Meeting, Vancouver, BC, Canada, Febuary 2019',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.desy.de/indico/event/21337/session/12/contribution/45/material/slides/0.pptx',
+        year: 2019
+    },
+
+    {
+        title: 'Low-Temperature Baking at Cornell',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC) Meeting, Vancouver, BC, Canada, Febuary 2019',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.desy.de/indico/event/21337/session/17/contribution/55/material/slides/0.pptx',
+        year: 2019
+    },
+
+    {
+        title: 'Overview of Flux Trapping at Cornell',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC)/ARIES Topical Workshop on Flux Trapping and Magnetic Shielding, Meyrin, Switzerland, November 2018',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.cern.ch/event/741615/contributions/3180346/attachments/1749877/2834857/Maniscalco_TTC_2018-11.pdf',
+        year: 2018
+    },
+
+    {
+        title: 'Fundamental Studies of Impurity Doping in 1.3 GHz and Higher Frequency SRF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'Proceedings of LINAC2018, Beijing, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://accelconf.web.cern.ch/AccelConf/linac2018/talks/tupo054_talk.pdf',
+        year: 2018
+    },
+
+    {
+        title: 'Fundamental Studies of Impurity Doping in 1.3 GHz and Higher Frequency SRF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2018, Beijing, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://accelconf.web.cern.ch/AccelConf/linac2018/papers/tupo054.pdf',
+        year: 2018
+    },
+
+    {
+        title: 'Fundamental Studies of Impurity Doping in 1.3 GHz and Higher Frequency SRF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', P. N. Koufalis, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2018, Beijing, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://accelconf.web.cern.ch/AccelConf/linac2018/papers/tupo054.pdf',
+        year: 2018
+    },
+
+    {
+        title: 'Low-Temperature Baking and Infusion Studies for High-Gradient ILC SRF Cavities',
+        authors: 'M. Ge, P. N. Koufalis, G. Kulina, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2018, Beijing, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://accelconf.web.cern.ch/AccelConf/linac2018/papers/tupo057.pdf',
+        year: 2018
+    },
+
+    {
+        title: 'Next Generation Nb'+'3'.sub()+'Sn Cavities for Linear Accelerators',
+        authors: 'R. D. Porter, T. Arias, P. Cueva, D. L. Hall, M. Liepe, '+'J. T. Maniscalco'.bold()+', D. A. Muller, N. Sitaraman (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of LINAC2018, Beijing, China',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://accelconf.web.cern.ch/AccelConf/linac2018/papers/tupo055.pdf',
+        year: 2018
+    },
+
     {
         title: 'A Computational Method for More Accurate Measurements of the Surface Resistance in SRF Cavities',
         authors: 'J. T. Maniscalco'.bold()+', M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
@@ -105,6 +214,18 @@ var cvItems = [
         downloadUrl: 'http://accelconf.web.cern.ch/AccelConf/ipac2018/papers/wepmf047.pdf',
         year: 2018
     }, 
+
+    {
+        title: 'Analysis of Mean Free Path and Field Dependent Surface Resistance',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC) Topical Workshop, Batavia, IL, November 2017',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.fnal.gov/event/15177/session/1/contribution/20/material/slides/0.pdf',
+        year: 2017
+    },
 
     {
         title: 'The Importance of the Electron Mean Free Path for Superconducting RF Cavities',
@@ -274,6 +395,18 @@ var cvItems = [
     }, 
 
     {
+        title: 'The Importance of the Electron Mean Free Path for Superconducting Radio-Frequency Cavities',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC) Meeting, Lansing, MI, February 2017',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.fnal.gov/event/12662/session/1/contribution/29/material/slides/0.pdf',
+        year: 2017
+    },
+
+    {
         title: 'Investigation of the Origin of the Anti-Q-Slope',
         authors: 'J. T. Maniscalco'.bold()+', M. Ge, D. Gonnella, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
@@ -346,6 +479,17 @@ var cvItems = [
         year: 2017
     }, 
 
+    {
+        title: 'Estimated Gradient Limitation Insights for Different Surface Processing from Klystron Measurements',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'TESLA Technology Collaboration (TTC) Meeting, Saclay, France, July 2016',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.in2p3.fr/event/12928/contributions/12080/attachments/10269/12726/maniscalco_ttc_saclay_2016.pdf',
+        year: 2016
+    },
 
     {
         title: 'Improved N-Doping Protocols for SRF Cavities',
