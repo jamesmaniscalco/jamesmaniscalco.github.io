@@ -29,7 +29,7 @@ Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (201
 ---
 
 
-## Research and Work
+## Research and Work Experience
 
 ### Graduate Research Assistant
 
@@ -38,6 +38,7 @@ Honors and Accolades: National Merit Scholarship, Lawrence Co-op Fellowship (201
 Superconducting RF Accelerator Group  
 Cornell University (CLASSE)  
 Supervisor: Matthias Liepe  
+
 
 ### Ruby on Rails Consultant
 
