@@ -159,10 +159,22 @@ var cvItems = [
         authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'talk',
-        journal: 'TESLA Technology Collaboration (TTC)/ARIES Topical Workshop on Flux Trapping and Magnetic Shielding, Meyrin, Switzerland, November 2018',
+        journal: 'TESLA Technology Collaboration (TTC)/ARIES Topical Workshop on Flux Trapping and Magnetic Shielding, Meyrin, Switzerland',
         published: true,
         status: 'published',
         downloadUrl: 'https://indico.cern.ch/event/741615/contributions/3180346/attachments/1749877/2834857/Maniscalco_TTC_2018-11.pdf',
+        year: 2018
+    },
+
+    {
+        title: 'SRF above 1.3 GHz: Motivation and Implications for Higher Order Modes',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'ICFA Mini Workshop on Higher Order Modes in Superconducting Cavities (HOMSC2018), Ithaca, NY',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://indico.classe.cornell.edu/event/185/contributions/550/attachments/424/525/HOM_2018_talk.PPTX',
         year: 2018
     },
 
@@ -327,7 +339,7 @@ var cvItems = [
         authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
         type: 'talk',
-        journal: 'TESLA Technology Collaboration (TTC) Topical Workshop, Batavia, IL, November 2017',
+        journal: 'TESLA Technology Collaboration (TTC) Topical Workshop, Batavia, IL',
         published: true,
         status: 'published',
         downloadUrl: 'https://indico.fnal.gov/event/15177/session/1/contribution/20/material/slides/0.pdf',
