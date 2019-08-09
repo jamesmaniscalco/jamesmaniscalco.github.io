@@ -12,6 +12,113 @@ function sortByYear(a, b) {
 var cvItems = [
 
     {
+        title: 'Nitrogen doping, nitrogen infusion, and niobium-3 tin: recent challenges and advances in fundamental SRF accelerator physics',
+        authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'Proceedings of CEC-ICMC 2019, Hartford, CT',
+        published: true,
+        status: 'published',
+        year: 2019
+    },
+
+    {
+        title: 'The Field-Dependent Surface Resistance of Doped Niobium: New Experimental and Theoretical Results',
+        authors: 'J. T. Maniscalco'.bold()+', T. Arias, M. Ge, P. N. Koufalis, D. B. Liarte, M. Liepe, J. P. Sethna, N. Sitaraman (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'talk',
+        journal: 'Proceedings of SRF2019, Dresden, Germany',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://srf2019.vrws.de/papers/tufua1.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'Progress Towards Commissioning the Cornell DC Field Dependence Cavity',
+        authors: 'J. T. Maniscalco'.bold()+', T. Gruber, A. T. Holic, M. Liepe (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2019, Dresden, Germany',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://srf2019.vrws.de/papers/tup051.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'Effect of Low Temperature Infusion Heat Treatments and "2/0" Doping on Superconducting Cavity Performance',
+        authors: 'P. N. Koufalis, M. Ge, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2019, Dresden, Germany',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://srf2019.vrws.de/papers/mop032.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'High Frequency Nb'+'3'.sub()+'Sn Cavities',
+        authors: 'R. D. Porter, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2019, Dresden, Germany',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://srf2019.vrws.de/papers/mop011.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'CVD Coated Copper Substrate SRF Cavity Research at Cornell University',
+        authors: 'M. Ge, T. Gruber, J. J. Kaufman, M. Liepe, '+'J. T. Maniscalco'.bold()+', T. E. Oseroff, R. D. Porter, Z. Sun (Cornell University (CLASSE), Ithaca, New York), V. M. Arrieta, S. R. McNeal (Ultramet, Pacoima, California, USA)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2019, Dresden, Germany',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://srf2019.vrws.de/papers/tufub8.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'Ab Initio Calculations on Impurity Doped Niobium and Niobium Surfaces',
+        authors: 'N. Sitaraman, T. Arias, M. Liepe, '+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York), R. G. Farber, S. J. Sibener, R. D. Veit (The University of Chicago, Chicago, Illinois, USA)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of SRF2019, Dresden, Germany',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://srf2019.vrws.de/papers/tup045.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'Theoretical Analysis of Quasiparticle Overheating, Positive Q-Slope, and Vortex Losses in SRF Cavities',
+        authors: 'J. T. Maniscalco'.bold()+', T. Arias, D. B. Liarte, M. Liepe, J. P. Sethna, N. Sitaraman (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: true,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2019, Melbourne, Australia',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://ipac2019.vrws.de/papers/weprb089.pdf',
+        year: 2019
+    },
+
+    {
+        title: 'High-gradient SRF Cavity R&D at Cornell University',
+        authors: 'M. Ge, T. Gruber, J. J. Kaufman, P. N. Koufalis, G. Kulina, M. Liepe,'+'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
+        firstAuthor: false,
+        type: 'proceedings',
+        journal: 'Proceedings of IPAC2019, Melbourne, Australia',
+        published: true,
+        status: 'published',
+        downloadUrl: 'https://ipac2019.vrws.de/papers/weprb087.pdf',
+        year: 2019
+    },
+
+    {
         title: 'Vertical EP and Green EP Progress at Cornell',
         authors: 'J. T. Maniscalco'.bold()+' (Cornell University (CLASSE), Ithaca, New York)',
         firstAuthor: true,
